@@ -484,8 +484,7 @@ main (int argc, char *argv[]) {
         int count_all = readText(words, numwords);
         int range = atoi(argv[3]);
         sort_words_occurencies(count_all);
-        if (range < count_all)
-        {
+        if (range < count_all) {
             count_all = range;
         }
         printf("%i",count_all);
