@@ -1,2 +1,2 @@
 # cloudy-postits
-C util for creating a cloud of stickers for data visualization.
+C util for creating a tag cloud of words for data visualization.
