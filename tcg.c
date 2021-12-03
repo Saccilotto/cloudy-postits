@@ -154,7 +154,7 @@ void writeCsv (int cnt) {
     fclose(fileCsv);
 }
 
-void writeCsvLimitewords (int cnt) {
+void writeCsvLimitwords (int cnt) {
     FILE* fileCsv = fopen ("words_occurencies_limited.csv", "w");
 
     fputs("word, Number of Occurencies \r\n", fileCsv);
@@ -493,7 +493,7 @@ main (int argc, char *argv[]) {
             count_all = range;
         }
         printf("%i",count_all);
-        writeCsvLimitewords(count_all);
+        writeCsvLimitwords(count_all);
 
         for (i = 0; i < numwords; i++)
         free (words[i]);
