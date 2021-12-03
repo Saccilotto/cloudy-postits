@@ -279,21 +279,18 @@ void with_color_html(int cnt) {
             fprintf(fileHTML, "</head>\n");
             fprintf(fileHTML, "<body> \n");
             fprintf(fileHTML, "<div class=\"words\"> \n");
-            for (size_t i = 1; i <= cnt/2; i++)
-            {
+            for (size_t i = 1; i <= cnt/2; i++) {
                 fprintf(fileHTML, "<span class=\"text1\">%s</span> \n", fileWords[i].word);
             }
             fprintf(fileHTML, "<span class=\"text5\">%s</span> \n", fileWords[0].word);
-            for (size_t i = cnt/2+1; i < cnt; i++)
-            {
+            for (size_t i = cnt/2+1; i < cnt; i++) {
                 fprintf(fileHTML, "<span class=\"text1\">%s</span> \n", fileWords[i].word);
             }
             fprintf(fileHTML, "</div>");
             fprintf(fileHTML, "</body>");
             fprintf(fileHTML, "</html>"); 
         }
-    }
-    else {
+    } else {
         fprintf(fileHTML, "<html> \n");
         fprintf(fileHTML, "<title> Words and Number of Ocurrencies </title> \n");
         fprintf(fileHTML, "<link rel=\"stylesheet\" type=\"text/css\" href=\"design.css\">\n");
@@ -364,7 +361,6 @@ void sort_words_occurencies(int cnt) {
         }
     }
 }
-
 
 int
 main (int argc, char *argv[]) {
