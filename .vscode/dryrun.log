@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/andre/Documents/PUCRS/prog_basica/T2/cloudy-postits'
+make: Leaving directory '/home/andre/Documents/PUCRS/prog_basica/T2/cloudy-postits'
+ 
+make: *** No rule to make target 'main.c', needed by 'main'.
+ 
