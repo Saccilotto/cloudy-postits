@@ -38,8 +38,9 @@ usage (int status) {
     printf("Try tag cloud app's --help command for more information on functionalities. \n");
     } else {
         printf ("\
-        Uso: [OPTION]... [FILE]...\n\
-        Ou:  [OPTION]... --files0-from=F\n\
+        don`t forget to execute make command before executing tcg\n\
+        Usages: ./tcg [OPTION] [FILE] \n\
+                ./tcg [OPTION1] [OPTION2] [FILE]\n\
         ");
         printf ("\nThe exit format output is on CSV or HTML format.\
         It shows the result of the most ocurred words on the read file.\n");
