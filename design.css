@@ -1,0 +1,24 @@
+.words {
+	text-align: center; vertical-align: middle; font-family:
+                    arial; color: black; background-color:white; border:1px solid white;
+}
+.text1 {
+	font-size: 20px;
+	color: yellow;
+}
+.text2 {
+	font-size: 40px;
+	color: green;
+}
+.text3 {
+	font-size: 60px;
+	color: blue;
+}
+.text4 {
+	font-size: 80px;
+	color: green;
+}
+.text5 {
+	font-size: 100px;
+	color: red;
+}
