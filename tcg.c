@@ -50,7 +50,7 @@ usage (int status) {
         -csv                                Most word occurencies output in CSV format \n\
         -html                               Most word occurencies output in HTML format \n\
         -html -color                        Most word occurencies output in HTML format and color \n\
-        -csv -range [number](I.E: 44)       Most word occurencies output in CSV format with most used range of words\n\
+        -csv -range [number](i.e: 5)        Most word occurencies output in CSV format with most used range of words\n\
         ");
         printf ("--help                       Show help description \n");
         printf ("--version                    Inform the current app version\n");
@@ -144,7 +144,7 @@ int readText (char** words, int lineNum) {
 }
 
 void writeCsv (int cnt) {
-    FILE* fileCsv = fopen ("words_occur.csv", "w");
+    FILE* fileCsv = fopen ("words_occurencies.csv", "w");
 
     fputs("word, Number of Occurencies \r\n", fileCsv);
     for (size_t i = 0; i < cnt; i++) {
@@ -154,7 +154,7 @@ void writeCsv (int cnt) {
 }
 
 void writeCsvLimitewords (int cnt) {
-    FILE* fileCsv = fopen ("words_occur.csv", "w");
+    FILE* fileCsv = fopen ("words_occurencies_limited.csv", "w");
 
     fputs("word, Number of Occurencies \r\n", fileCsv);
     for (size_t i = 0; i < cnt; i++) {
@@ -164,7 +164,7 @@ void writeCsvLimitewords (int cnt) {
 }
 
 void html_no_color(int cnt) {
-    FILE* fileHTML = fopen ("words_no_color.html", "w");
+    FILE* fileHTML = fopen ("web_no_color.html", "w");
     if (cnt < 40) {
         if (cnt == 0) {
             printf("No words to be written.");
@@ -254,7 +254,7 @@ void html_no_color(int cnt) {
 }
 
 void with_color_html(int cnt) {
-    FILE* fileHTML = fopen ("words_occur.html", "w");
+    FILE* fileHTML = fopen ("web_color.html", "w");
     if (cnt < 40) {
         if (cnt == 0) {
             printf("No words to be written.");
@@ -446,7 +446,7 @@ main (int argc, char *argv[]) {
         free (words[i]);
         free (words);
 
-        printf("Colorfull CSV Tag cloud output sucessfull!! \n");
+        printf("CSV Tag cloud output sucessfull!! \n");
     }
     if (isHtml == true) {   
         filename = argv[2];
@@ -498,6 +498,6 @@ main (int argc, char *argv[]) {
         free (words[i]);
         free (words);
 
-        printf("CSV Tag cloud with words range output sucessfull!! \n");
+        printf("CSV Tag cloud with limited words range output sucessfull!! \n");
     }
 }
